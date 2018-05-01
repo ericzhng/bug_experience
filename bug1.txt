@@ -1,0 +1,22 @@
+# bug_experience
+Some common bugs
+
+1. MATLAB for loop and C++ for loop are different.
+
+for k=1:N
+  ...
+  if error < 0
+    break;
+  end
+end
+
+after iteration ends, k = N. if the iteration breaks at some point, k = k1.
+
+for (int k = 0; k < N, k++){
+  ... 
+  if error < 0
+    break;
+}
+
+after the iteration ends, k = N. if the iteration breaks at some point, k = k1 - 1.
+
