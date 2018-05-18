@@ -1,0 +1,7 @@
+In windows/linux/mac os, ascii file ends each line differently. 
+
+Windows: \r\n
+Ubuntu: \n
+Mac: \r
+
+When using C++ to read file from files across platforms, remember to take this into consideration.
