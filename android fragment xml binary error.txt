@@ -1,0 +1,6 @@
+sometimes when using preferencefragment, your settings activity won't be able to launch, one possible reason is that preferenceTheme is not set.
+
+	<item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+		
+This would cause errors such as:
+	android.view.InflateException: Binary XML file: Error inflating class fragment
